@@ -760,6 +760,7 @@
                                 de créer et de gérer un loup garou en ligne avec une cinquantaine de personnes.
                             <div class="icons">
                                 <a href="img/Event_LG.png" target="_blank" class="icon">
+                                    <span style="display: none;">lien affiche</span>
                                     <i class="fab fa-discord"></i>
                                 </a>
                             </div>
@@ -782,6 +783,7 @@
                                 commander son kit. Il lui permettra de bien démarrer son nouveau cadre de vie.
                             <div class="icons">
                                 <a href="https://www.instagram.com/unikit_lan/" target="_blank" class="icon">
+                                    <span style="display: none;">lien instagram</span>
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </div>
@@ -824,12 +826,15 @@
                         <div class="contact-icons">
                             <div class="contact-icon">
                                 <a href="https://www.instagram.com/alice.hdts/" target="_blank">
+                                    <span style="display: none;">lien instagram</span>
                                     <i class="fab fa-instagram"></i>
                                 </a>
                                 <a href="https://www.youtube.com/channel/UCA6YQg8jY3r4YN6SkhI8alg" target="_blank">
+                                    <span style="display: none;">lien youtube</span>
                                     <i class="fab fa-youtube"></i>
                                 </a>
                                 <a href="https://www.linkedin.com/in/alice-hoedts-526390231/" target="_blank">
+                                    <span style="display: none;">lien linkedin</span>
                                     <i class="fab fa-linkedin"></i>
                                 </a>
                             </div>
@@ -839,18 +844,27 @@
                         <form action="https://api.web3forms.com/submit" class="contact-form" method="post">
                             <input type="hidden" name="access_key" value="e5d7e4ab-df14-4400-b58a-2e9b0996bed1">
                             <div class="input-control i-c-2">
-                                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
-                                <input type="text" id="mail" name="mail" required placeholder="Votre email">
+                                <input type="text" id="nom" name="nom" required placeholder="Votre nom *"
+                                    aria-label="Votre nom *" title="Votre nom *">
+                                <input type="text" id="mail" name="mail" required placeholder="Votre email *"
+                                    aria-label="Votre email *" title="Votre email *">
+
 
                             </div>
                             <div class="input-control">
-                                <textarea name="message" id="message" cols="15" rows="8"
-                                    placeholder="Votre message ici..."></textarea>
+                                <input type="text" name="Phone Number" placeholder="Votre numéro de téléphone (facultatif)"
+                                    aria-label="Votre numéro de téléphone" title="Votre numéro de téléphone">
                             </div>
 
+                            <div class="input-control">
+                                <textarea name="message" id="message" cols="15" rows="8"
+                                    placeholder="Votre message ici... *" title="Votre message ici... *"></textarea>
+                            </div>
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;" aria-label="hidden">
                             <div class="submit-btn">
                                 <button href="#" class="main-btn" type="submit" role="button">
-                                    <input type="hidden">
+                                    <input type="hidden" name="from_name" value="Portfolio AHoedts">
+                                    <input type="hidden" name="subject" value="Réponse formulaire contact">
                                     <input type="hidden" name="redirect" value="https://web3forms.com/success">
                                     <span class="btn-text">Envoyer</span>
                                     <span class="btn-icon"><i class="fas fa-envelope"></i></span>
@@ -864,24 +878,24 @@
         </section>
     </main>
 
-    <div class="controls">
-        <div class="control active-btn" data-id="home">
+    <nav class="controls" role="navigation">
+        <div class="control active-btn" data-id="home" title="Accueil">
             <i class="fas fa-home"></i>
         </div>
-        <div class="control" data-id="about">
+        <div class="control" data-id="about" title="À propos">
             <i class="fas fa-user"></i>
         </div>
-        <div class="control" data-id="portfolio">
+        <div class="control" data-id="portfolio" title="Créations">
             <i class="fas fa-briefcase"></i>
         </div>
-        <div class="control" data-id="blogs">
+        <div class="control" data-id="blogs" title="Projets">
             <i class="far fa-newspaper"></i>
         </div>
-        <div class="control" data-id="contact">
+        <div class="control" data-id="contact" title="Contact">
             <i class="fas fa-envelope-open"></i>
         </div>
-    </div>
-    <div class="theme-btn">
+    </nav>
+    <div class="theme-btn" title="Thème">
         <i class="fas fa-adjust"></i>
     </div>
     <script src="app.js"></script>
