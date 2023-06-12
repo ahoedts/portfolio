@@ -227,6 +227,13 @@ section {
   line-height: 2rem;
 }
 
+
+.video-container{
+  display: flex;
+  justify-content: center;
+  grid-gap: 2rem;
+}
+
 /*About*/
 .logo1 {
   max-width: 2.95rem;
