@@ -1049,6 +1049,10 @@ section {
   .main-title h2 .bg-text {
     font-size: 4.5rem;
   }
+  .video-container{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 970px) {
