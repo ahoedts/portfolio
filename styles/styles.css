@@ -48,7 +48,9 @@ a, button {
   text-decoration: none;
   color: inherit;
   font-family: inherit;
-  padding:20px;
+}
+.txt-hover{
+  padding: 20px;
   text-align: center;
 }
 
@@ -565,6 +567,8 @@ section {
   margin-top: 20px;
 
 }
+
+
 .video-container{
   display: flex;
   justify-content: center;
